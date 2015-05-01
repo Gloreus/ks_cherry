@@ -1,0 +1,53 @@
+body{
+  background-color:     Black;
+  font-family:  Georgia, sans-serif; 
+}
+h1, h2, h3, h4, h5, h6{
+  font-family:  Georgia, sans-serif; 
+}
+
+h2, h2 a{
+  font-style: italic;
+  font-weight: normal;  
+  color:  #660;  
+  font-size: 24px;
+}
+
+h6{
+  font-style: italic;
+  font-weight: bold;  
+  color:  #666;  
+  font-size: 12px;
+}
+
+.ks-page{
+  background-image:
+    url('../img/surround-l.png'),
+    url('../img/surround-r.png');
+    background-repeat:repeat-y, repeat-y;  
+    background-position: left, right;
+  padding-left:  20px;
+  padding-right: 20px;   
+}
+
+.ks-body{
+  background-image:
+    url('../img/surround-texture.png');
+  margin: 0;
+}
+
+.ks-logo{
+  text-align: center;
+  margin-left: -18px;
+  margin-right: -18px;
+}
+
+.ks-top-bar{ 
+  padding-top: 10px;
+}
+.ks-top-bar, .ks-top-bar a {
+  font-family:  Georgia, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: Black;
+}                                                            
