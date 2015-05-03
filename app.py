@@ -12,6 +12,10 @@ if __name__ == '__main__':
     # Register the Jinja2 tool
     from jinja2_templating.j2tool import TemplateTool
     cherrypy.tools.template = TemplateTool()
+    
+    # Register the database plugin
+    from data import DatabasePlugin
+    DatabasePlugin(cherrypy.engine).subscribe()
 
     from ks import ks_site
 
