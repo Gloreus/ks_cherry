@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script>
+    <title>{{site_title}} | {{Page_title}}</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="content">
+        <header class="header clearfix">
+          <img class="img" src="img/ks-name.jpg" alt="Киноспойлер">
+        </header>
+        <div class="info clearfix">
+          <article class="clearfix">
+            <form class="right">
+              <label for="searche">Поиск спойлеров:</label>
+              <input type="text" name="searche" placeholder="Название..">
+            </form>
+            <hr>{% block top_news%} {% endblock %}
+            <hr>
+          </article>
+          <aside class="col_25 clearfix">{% block sidebar %} {% endblock %}</aside>
+          <main class="col_75 clearfix">{% block content %} {% endblock %}</main>
+        </div>
+        <footer class="footer">
+          <hr>
+          <p align="center">© kinospoiler.com 2015</footer>
+      </div>
+    </div>
+  </body>
