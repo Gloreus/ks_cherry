@@ -21,15 +21,9 @@ class DatabasePlugin(plugins.SimplePlugin):
     def reconnect(self):
         self.bus.log('Reconnect..')
         self.db = None
+        conn = cherrypy.config['db_str'] 
         try:
-          self.db = postgresql.open(
-                      user = 'slava'
-                    , host = 'localhost'
-                    , port = 5432
-                    , password = 'c300g'
-                    , database = 'ks'
-                    , connect_timeout= 100
-                    )
+          self.db = postgresql.open(conn)
         except Exception as e: 
             self.bus.log('Connection error:', e)
         

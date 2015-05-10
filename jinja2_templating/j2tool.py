@@ -7,10 +7,6 @@ import types
 import cherrypy
 import jinja2
 
-
-# path   = os.path.abspath(os.path.dirname(__file__))
-
-
 class TemplateTool(cherrypy.Tool):
 
   _engine = None

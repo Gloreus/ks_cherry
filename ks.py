@@ -14,3 +14,7 @@ class ks_site:
         else:
             s = 'error'     
         return {'site_title': s}
+
+    @cherrypy.tools.template(name='ed_film')
+    def new_film(self):
+        return {'site_title': '12', 'page_title': 'Карточка фильма'}
